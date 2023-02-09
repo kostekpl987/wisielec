@@ -1,6 +1,6 @@
 const easy=['BERLIN','LONDON','WARSAW','PARIS','MADRIT'];
 const medium=['WARDROBE','CUPBOARD','DESK','CHAIR','TABLE'];
-const hard=['GIRAFFE','RHINO', 'MONKEY','TURTLE','COROCODILE' ];
+const hard=['GIRAFFE','RHINO', 'MONKEY','TURTLE','CROCODILE' ];
 const cat=document.getElementById('cat')
 const lifeV=document.getElementById('life')
 const empty=document.getElementById('empty');
