@@ -134,6 +134,8 @@ function check(id) {
 
 function start() {
 	empty.innerHTML=''
+	document.getElementById('endgame').style.display='none';
+	document.getElementById('win').style.display='none';
 	cat.innerHTML='Guess the word. Category: '
 	lifeV.innerHTML=5;
 	for(let i=0;i<=25;i++)
