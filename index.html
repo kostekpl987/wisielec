@@ -3,29 +3,57 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="nationalize.css">
-	<title>Guess name</title>
+	<title>Wisielec</title>
+	
+	<link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
-	<div class="search">
-		<h1>Can I guess where are you from?</h1>
-		<p>Enter your name and I'll try to guess your nationality based on statistics.</p>
-		<div class="e_container">
-			<p>It appears that either, your name is incorrect or does not exist.</p>
-		</div>
-		<form>
-			<input placeholder="Your name" autocomplete="off" type="text" name="name">
-			<button><p>Enter</p></button>
-		</form>
-	</div>
+	<nav>
+		<h1>Wisielec</h1>
+		
+		<select class="difficulty" id="opt" onchange="start()">
+			<option>Cities</option>
+			<option>Animals</option>
+			<option>Furniture</option>
+		</select>
+	</nav>
+	<div class="alphabet">
+		<div onclick="check(this.id)" id="0">A</div>
+		<div onclick="check(this.id)" id="1">B</div>
+		<div onclick="check(this.id)" id="2">C</div>
+		<div onclick="check(this.id)" id="3">D</div>
+		<div onclick="check(this.id)" id="4">E</div>
+		<div onclick="check(this.id)" id="5">F</div>
+		<div onclick="check(this.id)" id="6">G</div>
+		<div onclick="check(this.id)" id="7">H</div>
+		<div onclick="check(this.id)" id="8">I</div>
+		<div onclick="check(this.id)" id="9">J</div>
+		<div onclick="check(this.id)" id="10">K</div>
+		<div onclick="check(this.id)" id="11">L</div>
+		<div onclick="check(this.id)" id="12">M</div>
+		<div onclick="check(this.id)" id="13">N</div>
+		<div onclick="check(this.id)" id="14">O</div>
+		<div onclick="check(this.id)" id="15">P</div>
+		<div onclick="check(this.id)" id="16">Q</div>
+		<div onclick="check(this.id)" id="17">R</div>
+		<div onclick="check(this.id)" id="18">S</div>
+		<div onclick="check(this.id)" id="19">T</div>
+		<div onclick="check(this.id)" id="20">U</div>
+		<div onclick="check(this.id)" id="21">V</div>
+		<div onclick="check(this.id)" id="22">W</div>
+		<div onclick="check(this.id)" id="23">X</div>
+		<div onclick="check(this.id)" id="24">Y</div>
+		<div onclick="check(this.id)" id="25">Z</div>
 
-	<div class="results">
-		
-
-		
-				
+	</div>
+	<h2 id="cat">Guess the word. Category: </h2>
+	<div class="blank" id="empty">
 		
 	</div>
-	<script type="text/javascript" src="nationalize.js"></script>
+	<h2>Amount of attempts: <p id="life">5</p></h2>
+	<div id="endgame"><h2>you lost</h2></div>
+	<div id="win"><h2>you won</h2></div>
+	<div class="reset"><input type="submit" onclick="start()" value="Restart"></div>
+  <script src="script.js"></script>
 </body>
 </html>
